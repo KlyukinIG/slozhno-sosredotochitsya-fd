@@ -3,7 +3,7 @@
 .page {
   background-image: var(--bg-image-dark-them);
   background-attachment: fixed;
-  background-color: var(--bg-color-dark-them, black);
+  background-color: var(--bg-color-dark-them);
   background-position: center;
   background-size: cover;
   inline-size: 100%;
@@ -138,6 +138,7 @@
 
 .header__theme-menu-button_active {
   outline: 1px solid var(--accent-color, #ff0070);
+  pointer-events: none;
 }
 
 .header_title {
