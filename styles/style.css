@@ -193,7 +193,6 @@
   font-size: var(--main-font-size, 18px);
   line-height: 23.4px;
   color: var(--accent-color);
-  margin-bottom: 10px;
 }
 
 .title_decor {
@@ -203,6 +202,9 @@
 
 .card {
   inline-size: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .cards_text {
@@ -266,10 +268,6 @@
 
 .how_to_concentrate_cards_box .cards_title {
   margin: 0;
-}
-
-.how_to_concentrate_cards_box .cards_text {
-  margin-top: 10px;
 }
 
 .title_decor_thin {
@@ -396,18 +394,9 @@
     align-content: start;
   }
 
-  .hard_to_concentrate .cards_title,
-  .decrease_in_concentration .cards_title {
-    margin-bottom: 10px;
-  }
-
   .how_to_concentrate {
     margin-top: 20px;
     grid-template-columns: minmax(min-content, 236px) 1fr;
-  }
-
-  .how_to_concentrate_cards_box .card .cards_title {
-    margin-bottom: 10px;
   }
 
   .images_section {
