@@ -9,6 +9,7 @@
   inline-size: 100%;
   block-size: 100%;
   padding: var(--main-padding, 20px);
+  margin: 0 auto;
 
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
@@ -171,7 +172,7 @@
   display: grid;
   gap: 59px;
   grid-template-columns: 1fr;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .section {
