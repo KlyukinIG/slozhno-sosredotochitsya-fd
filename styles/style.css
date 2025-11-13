@@ -1,14 +1,15 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  background-image: var(--bg-image-dark-them);
+  background-image: var(--bg-image);
   background-attachment: fixed;
-  background-color: var(--bg-color-dark-them);
+  background-color: var(--bg-color);
   background-position: center;
   background-size: cover;
   inline-size: 100%;
   block-size: 100%;
   padding: var(--main-padding, 20px);
+
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
 
@@ -17,12 +18,11 @@
   align-items: center;
   position: absolute;
   text-transform: uppercase;
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, monospace);
   font-weight: 400;
-  font-style: Regular;
   font-size: var(--main-font-size, 18px);
   line-height: 25px;
-  color: var(--accent-color, #ff0070);
+  color: var(--accent-color);
   top: 0;
   right: 10px;
 }
@@ -31,8 +31,8 @@
   content: "";
   inline-size: 10px;
   block-size: 10px;
-  box-shadow: 0px 0px 4px 2px var(--accent-color, #ff0070);
-  background-color: var(--accent-color, #ff0070);
+  box-shadow: 0px 0px 4px 2px var(--accent-color);
+  background-color: var(--accent-color);
   margin-left: 10px;
   display: inline-block;
   border-radius: 50%;
@@ -41,19 +41,20 @@
 .link_style {
   text-decoration: none;
   display: inline-block;
+  border: 1px solid transparent;
 }
 
 .link_shodow {
-  text-shadow: 3px 3px 0 #ff0070;
+  text-shadow: 3px 3px 0 var(--link-shadow);
 }
 
 .link_style:hover {
-  border-bottom: 1px solid #f1b2ce;
+  border-bottom: 1px solid var(--link-border);
 }
 
 .link_style:focus-visible {
   outline: none;
-  border: 1px solid #f1b2ce;
+  border: 1px solid var(--link-border);
 }
 
 .header {
@@ -77,8 +78,8 @@
   display: block;
   inline-size: 25px;
   block-size: 25px;
-  border-bottom: 1px solid var(--accent-color, #ff0070);
-  border-left: 1px solid var(--accent-color, #ff0070);
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
   bottom: 40px;
   left: 0;
 }
@@ -89,8 +90,8 @@
   display: block;
   inline-size: 25px;
   block-size: 25px;
-  border-right: var(--accent-color, #ff0070) solid 1px;
-  border-top: var(--accent-color, #ff0070) solid 1px;
+  border-right: var(--accent-color) solid 1px;
+  border-top: var(--accent-color) solid 1px;
   top: 0;
   right: 0;
 }
@@ -108,12 +109,12 @@
 }
 
 .header__theme-menu-item {
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, monospace);
   font-weight: 400;
   font-style: Regular;
   font-size: var(--main-font-size, 18px);
   text-align: center;
-  color: var(--accent-color, #ff0070);
+  color: var(--header-menu-text);
 }
 
 .header__theme-menu-button {
@@ -123,31 +124,29 @@
   padding-left: 13px;
   padding-right: 13px;
   background: transparent;
-  border: none;
+  border: 1px solid transparent;
   text-transform: lowercase;
 }
 
 .header__theme-menu-button:focus {
-  outline: 1px solid var(--accent-color, #ff0070);
-  outline-offset: 1px;
+  border-bottom: 1px solid var(--menu-button-border);
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid #ff007066;
+  border: 1px solid var(--menu-button-border-opacity);
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid var(--accent-color, #ff0070);
+  border: 1px solid var(--menu-button-border);
   pointer-events: none;
 }
 
 .header_title {
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, monospace);
   font-weight: 700;
-  font-style: Bold;
   font-size: clamp(116px, 6.32vw + 92.28px, 157px);
   line-height: 83%;
-  color: #db00ff;
+  color: var(--main-title-color);
   text-shadow: 4px 4px 0 var(--accent-color);
   justify-self: start;
   align-self: center;
@@ -160,9 +159,8 @@
   max-inline-size: 491px;
   align-self: center;
   justify-self: end;
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, monospace);
   font-weight: 700;
-  font-style: Bold;
   font-size: var(--main-font-size, 18px);
   line-height: 23.4px;
   margin-bottom: 78px;
@@ -171,8 +169,9 @@
 .content {
   max-inline-size: 1024px;
   display: grid;
-  gap: 60px;
+  gap: 59px;
   grid-template-columns: 1fr;
+  margin: auto;
 }
 
 .section {
@@ -180,27 +179,25 @@
 }
 
 .section_title {
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, monospace);
   font-weight: 700;
-  font-style: Bold;
   font-size: var(--main-font-size, 18px);
   line-height: 23.4px;
-  color: var(--accent-color, #ff0070);
+  color: var(--section_title-color);
 }
 
 .cards_title {
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, monospace);
   font-weight: 700;
-  font-style: Bold;
   font-size: var(--main-font-size, 18px);
   line-height: 23.4px;
-  color: var(--accent-color, #ff0070);
+  color: var(--accent-color);
   margin-bottom: 10px;
 }
 
 .title_decor {
-  background-color: var(--accent-color, #ff0070);
-  color: #000;
+  background-color: var(--accent-color);
+  color: var(--title-card-color);
 }
 
 .card {
@@ -208,13 +205,12 @@
 }
 
 .cards_text {
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, monospace);
   font-weight: 400;
-  font-style: Regular;
   font-size: var(--main-font-size, 18px);
   line-height: 23.4px;
   letter-spacing: 0%;
-  color: #f1b2ce;
+  color: var(--text-card-color);
 }
 
 .hard_to_concentrate {
@@ -277,7 +273,6 @@
 
 .title_decor_thin {
   font-weight: 400;
-  font-style: Regular;
 }
 
 .images_section {
@@ -330,7 +325,7 @@
 }
 
 .footer_title {
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, monospace);
   font-weight: 700;
   font-style: Bold;
   font-size: clamp(116px, 6.32vw + 92.28px, 157px);
@@ -368,7 +363,7 @@
 
   .header_title {
     margin-left: -17px;
-    font-size: 120px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     padding: 0;
   }
 
@@ -388,7 +383,7 @@
   }
 
   .content {
-    gap: 60px;
+    gap: 59px;
   }
 
   .decrease_in_concentration {
@@ -431,7 +426,7 @@
   }
 
   .footer_title {
-    font-size: 120px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .footer.decorated-zone::before {
@@ -471,7 +466,7 @@
   .header_title {
     padding-top: 20px;
     margin: 0;
-    font-size: 116px;
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 
   .header_paragraph {
@@ -488,12 +483,10 @@
   .content {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 19px;
   }
 
-  .hard_to_concentrate,
-  .how_to_concentrate,
-  .decrease_in_concentration {
+  .section_content_mobile {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -561,7 +554,7 @@
   }
 
   .footer_title {
-    font-size: 116px;
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 
   .footer.decorated-zone::before {

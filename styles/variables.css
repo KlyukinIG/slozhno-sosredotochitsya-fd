@@ -7,8 +7,17 @@
   --bg-color: #000028;
   --bg-image: url(../images/cover-image-dark.png);
   --accent-color: #ff0070;
-  --main-font: IBM Plex Mono, monospace;
+  --main-font: IBM Plex Mono;
   --main-font-size: 18px;
   --main-grid-gap: 20px;
   --main-padding: 20px;
+  --link-shadow: #ff0070;
+  --link-border: #ff0070;
+  --menu-button-border-opacity: #ff007066;
+  --menu-button-border: #ff0070;
+  --main-title-color: #db00ff;
+  --title-card-color: #000028;
+  --text-card-color: #f1b2ce;
+  --section_title-color: #ff0070;
+  --header-menu-text: #ff0070;
 }
