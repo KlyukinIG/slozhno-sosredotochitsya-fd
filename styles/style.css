@@ -368,8 +368,6 @@
   }
 
   .header_paragraph {
-    align-self: center;
-    inline-size: 100%;
     max-inline-size: 364px;
     margin: 0;
   }
@@ -452,8 +450,6 @@
 
   .header__theme-menu {
     padding-top: 30px;
-    justify-self: end;
-    align-self: center;
     max-inline-size: 70px;
   }
 
@@ -471,8 +467,6 @@
 
   .header_paragraph {
     padding-top: 10px;
-    align-self: center;
-    inline-size: 100%;
     min-inline-size: 355px;
   }
 
