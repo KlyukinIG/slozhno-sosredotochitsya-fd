@@ -17,6 +17,7 @@
   --header-menu-text: #353430;
   --menu-button-border: #353430;
   --menu-button-border-opacity: #32312d66;
+  --corner-docere-color: #353430;
 }
 
 .theme-light .rec_element {
@@ -24,7 +25,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
+  :root:not(.theme-dark) {
     --bg-color: #fff1f7;
     --bg-image: url(../images/cover-image-light.png);
     --accent-color: #ff8dcb;
@@ -37,9 +38,10 @@
     --header-menu-text: #353430;
     --menu-button-border: #353430;
     --menu-button-border-opacity: #32312d66;
+    --corner-docere-color: #353430;
   }
 
-  .rec_element {
+  :root:not(.theme-dark) .rec_element {
     display: none;
   }
 }

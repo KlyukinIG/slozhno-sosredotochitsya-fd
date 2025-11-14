@@ -12,7 +12,7 @@
   --main-grid-gap: 20px;
   --main-padding: 20px;
   --link-shadow: #ff0070;
-  --link-border: #ff0070;
+  --link-border: #F1B2CE;
   --menu-button-border-opacity: #ff007066;
   --menu-button-border: #ff0070;
   --main-title-color: #db00ff;
@@ -20,4 +20,5 @@
   --text-card-color: #f1b2ce;
   --section_title-color: #ff0070;
   --header-menu-text: #ff0070;
+  --corner-docere-color: #ff0070;
 }

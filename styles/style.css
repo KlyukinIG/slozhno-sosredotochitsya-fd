@@ -79,8 +79,8 @@
   display: block;
   inline-size: 25px;
   block-size: 25px;
-  border-bottom: 1px solid var(--accent-color);
-  border-left: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--corner-docere-color);
+  border-left: 1px solid var(--corner-docere-color);
   bottom: 40px;
   left: 0;
 }
@@ -91,8 +91,8 @@
   display: block;
   inline-size: 25px;
   block-size: 25px;
-  border-right: var(--accent-color) solid 1px;
-  border-top: var(--accent-color) solid 1px;
+  border-right: var(--corner-docere-color) solid 1px;
+  border-top: var(--corner-docere-color) solid 1px;
   top: 0;
   right: 0;
 }
@@ -130,6 +130,7 @@
 }
 
 .header__theme-menu-button:focus {
+  outline: none;
   border-bottom: 1px solid var(--menu-button-border);
 }
 
@@ -337,7 +338,7 @@
   font-style: Bold;
   font-size: clamp(116px, 6.32vw + 92.28px, 157px);
   line-height: 83%;
-  color: #db00ff;
+  color: var(--main-title-color);
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
